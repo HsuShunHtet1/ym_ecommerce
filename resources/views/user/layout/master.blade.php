@@ -44,8 +44,8 @@
                                                         <a class="dropdown-item" href="#">Welcome {{Auth::user()->name}}!</a>
                                                         <a class="dropdown-item" href="{{url('/logout')}}">Logout</a>
                                                     @else
-                                                        <a class="dropdown-item" href="">Login</a>
-                                                        <a class="dropdown-item" href="">Register</a>
+                                                        <a class="dropdown-item" href="{{ url('/login') }}">Login</a>
+                                                        <a class="dropdown-item" href="{{ url('/register') }}">Register</a>
                                                     @endif
                                                 </div>
                                         </li>
